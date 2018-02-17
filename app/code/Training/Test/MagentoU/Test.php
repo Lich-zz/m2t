@@ -8,6 +8,7 @@ class Test
         \Magento\Checkout\Model\Session $session,
         \Training\Test\Api\ProductRepositoryInterface $unit1ProductRepository,
         $justAParameter = false,
+        $justAParameter2 = false,
         array $data
     ) {
 

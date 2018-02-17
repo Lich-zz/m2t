@@ -3,7 +3,7 @@
 namespace Training\Test\Api;
 
 
-interface ProductInterface extends \Magento\Framework\Api\CustomAttributesDataInterface
+interface ProductRepositoryInterface extends \Magento\Framework\Api\CustomAttributesDataInterface
 {
     /**#@+
      * Constants defined for keys of  data array
