@@ -1,0 +1,20 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Training\Test\Api\ProductRepositoryInterface"
+                type="Magento\Catalog\Model\ProductRepository" />
+
+    <type name="Training\Test\MagentoU\Test">
+        <arguments>
+            <argument name="justAParameter" xsi:type="string"> Hello world! </argument>
+            <argument name="data" xsi:type="array">
+            <item name="test-array-item" xsi:type="string">Test Array Item!!!</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Theme\Block\Html\Footer">
+        <plugin name="getCopyright" type="Training\Test\Plugin\Block\Html\Footer"/>
+    </type>
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="addCrumb" type="Training\Test\Plugin\Block\Html\Breadcrumbs"/>
+    </type>
+</config>
